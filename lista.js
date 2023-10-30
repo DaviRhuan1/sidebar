@@ -125,14 +125,14 @@ function editItem(e) {
   editFlag = true;
   editID = element.dataset.id;
   //
-  submitBtn.textContent = "edit";
+  submitBtn.textContent = "Editar";
 }
 // set backt to defaults
 function setBackToDefault() {
   grocery.value = "";
   editFlag = false;
   editID = "";
-  submitBtn.textContent = "submit";
+  submitBtn.textContent = "Adicionar";
 }
 
 // ****** local storage **********
