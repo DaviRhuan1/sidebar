@@ -1,15 +1,17 @@
 html {
-  --body-color: hsl(205, 90%, 88%);
+  --body-color: #ADD8E6;
 
-  --header-color: #d36c6c;
+  --header-color: white;
+
+  --sunday-color: red;
 
   --header-button: #0d811d;
 
-  --color-weekdays: #247ba0;
+  --color-weekdays: #696969;
 
   --box-shadow: #cbd4c2;
 
-  --hover: #e8faed;
+  --hover: #58bae4;
 
   --current-day: #49a6e9;
 
@@ -20,11 +22,16 @@ html {
   --color-day: white;
 }
 
+:root{
+  --ff-secondary: "Open Sans", sans-serif;
+}
+
 body {
   display: flex;
   margin-top: 50px;
   justify-content: center;
   background-color: var(--body-color);
+  font-family: var(--ff-secondary);
 }
 button {
   background-color: #49a6e9;
@@ -67,6 +74,9 @@ button:hover {
   width: 100px;
   padding: 10px;
 }
+#colorSunday{
+  color: var(--sunday-color);
+}
 #calendar {
   width: 100%;
   margin: auto;
@@ -98,7 +108,7 @@ button:hover {
   font-size: 10px;
   padding: 3px;
   background-color: var(--event-color);
-  color: white;
+  color: black;
   border-radius: 5px;
   max-height: 55px;
   overflow: hidden;
@@ -135,13 +145,35 @@ button:hover {
 #eventTitleInput.error {
   border: 2px solid red;
 }
+#date1 {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+#date2 {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
 #cancelButton,
 #deleteButton {
-  background-color: var(--header-color);
+  background-color: red;
 }
-#saveButton,
+#saveButton{
+  background-color: #0d811d;
+}
 #closeButton {
-  background-color: var(--header-button);
+  background-color: #49a6e9;
 }
 #eventText {
   font-size: 14px;
@@ -157,3 +189,22 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #010101;
+    color: black;
+  }
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  /* background-color: #d3d3d3 */
+  color: gray;
+  width: 100%;
+  height: 25px;    
+  text-align: center;
+  line-height: 25px;
+}

@@ -7,16 +7,9 @@
 
     <!-- arquivos style -->
     <link href="calendario.css" rel="stylesheet" />
-    <link href="darkMode.css" rel="stylesheet" />
-    <link rel="shortcut icon" type="imagex/png" href="img/logo2.ico">
+    <link rel="shortcut icon" type="imagex/png" href="img/logo2.ico" />
     <title>Calendário</title>
   </head>
-  <!-- dark mode -->
-
-  <div class="toggle">
-    <input id="switch" type="checkbox" name="theme" />
-    <label for="switch">Toggle</label>
-  </div>
 
   <!-- -------- -->
   <body>
@@ -32,7 +25,7 @@
       </div>
 
       <div id="weekdays">
-        <div>Domingo</div>
+        <div id="colorSunday">Domingo</div>
         <div>Segunda-feira</div>
         <div>Terça-feira</div>
         <div>Quarta-feira</div>
@@ -49,6 +42,8 @@
       <h2>Novo Evento</h2>
 
       <input id="eventTitleInput" placeholder="Digite aqui o seu novo evento" />
+      <input type="date" id="date1" name="eventDateI" placeholder="Data de Início">
+      <input type="date" id="date2" name="eventDateF" placeholder="Data de Fim">
 
       <button id="saveButton">Salvar</button>
       <button id="cancelButton">Cancelar</button>
@@ -61,12 +56,13 @@
       <br />
 
       <button id="deleteButton">Deletar</button>
-      <button id="closeButton">Fechar</button>
+      <button id="closeButton">Fechar lembrete</button>
     </div>
 
     <div id="modalBackDrop"></div>
 
-    <script src="darkMode.js"></script>
+    <footer>&copy; 2023 To do. Todos os direitos reservados.</footer>
+
     <script src="calendario.js"></script>
   </body>
 </html>

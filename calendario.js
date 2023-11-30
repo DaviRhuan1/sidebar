@@ -11,6 +11,8 @@ const newEvent = document.getElementById('newEventModal')
 const deleteEventModal = document.getElementById('deleteEventModal')
 const backDrop = document.getElementById('modalBackDrop')
 const eventTitleInput = document.getElementById('eventTitleInput')
+const eventDateI = document.getElementById('date1')
+const eventDateF = document.getElementById('date2')
 // --------
 const calendar = document.getElementById('calendar') // div calendar:
 const weekdays = ['domingo','segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado'] //array with weekdays:
@@ -23,7 +25,11 @@ function openModal(date){
  
 
   if (eventDay){
-   document.getElementById('eventText').innerText = eventDay.title
+  const startDate = eventDay.startDate ? new Date(eventDay.startDate + 'T00:00:00').toLocaleDateString('pt-br', { timeZone: 'UTC' }) : '';
+  const endDate = eventDay.endDate ? new Date(eventDay.endDate + 'T00:00:00').toLocaleDateString('pt-br', { timeZone: 'UTC' }) : '';
+  const titleToShow = eventDay.title || ''; 
+
+   document.getElementById('eventText').innerText = `\nTítulo:${titleToShow}\nData de Início: ${startDate}\nData de Fim: ${endDate}`;
    deleteEventModal.style.display = 'block'
 
 
@@ -124,13 +130,15 @@ function closeModal(){
 
 }
 function saveEvent(){
-  if(eventTitleInput.value){
+  if(eventTitleInput.value && eventDateI.value && eventDateF.value){
     eventTitleInput.classList.remove('error')
 
     events.push({
       date: clicked,
-      title: eventTitleInput.value
-    })
+      title: eventTitleInput.value,
+      startDate: eventDateI.value,
+      endDate: eventDateF.value
+    });
 
     localStorage.setItem('events', JSON.stringify(events))
     closeModal()

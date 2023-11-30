@@ -68,7 +68,7 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background-color: hsl(205, 90%, 88%);
+  background-color: #ADD8E6;
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -89,6 +89,7 @@ h4 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
+  color:#010101;
 }
 h1 {
   font-size: 3rem;
@@ -163,6 +164,7 @@ About
     text-align: center;
     margin-bottom: 4rem;
   }
+  
   .title p {
     width: 80%;
     margin: 0 auto;
@@ -360,4 +362,75 @@ Sidebar
   .sidebar {
     width: 400px;
   }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #010101;
+    color: #f0ece2;
+  }
+}
+
+/* Footer */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  /* background-color: #d3d3d3 */
+  color: gray;
+  width: 100%;
+  height: 25px;    
+  text-align: center;
+  line-height: 25px;
+}
+
+/* Fale conosco */
+
+#fale-conosco {
+  padding: 20px;
+}
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 1px;
+  color: var(--clr-grey-5);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background-color: #49a6e9;
+  color: white;
+  border: none;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+input[type="submit"]:hover {
+  background-color: hsl(205, 89%, 70%);
+}
+
+/* Alternar entre imagens */
+.imagem {
+  display: inline-block;
+  margin: 10px;
 }

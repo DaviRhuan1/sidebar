@@ -68,7 +68,7 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background-color: hsl(205, 90%, 88%);
+  background-color: #ADD8E6;
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -344,4 +344,25 @@ button {
 
 button:hover {
     background-color: hsl(205, 89%, 70%);
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #010101;
+    color: #f0ece2;
+  }
+}
+
+/* Footer */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  /* background-color: #d3d3d3 */
+  color: gray;
+  width: 100%;
+  height: 25px;    
+  text-align: center;
+  line-height: 25px;
 }
