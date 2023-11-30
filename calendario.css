@@ -1,5 +1,5 @@
 html {
-  --body-color: #add8e6;
+  --body-color: #ADD8E6;
 
   --header-color: white;
 
@@ -22,7 +22,7 @@ html {
   --color-day: white;
 }
 
-:root {
+:root{
   --ff-secondary: "Open Sans", sans-serif;
 }
 
@@ -74,7 +74,7 @@ button:hover {
   width: 100px;
   padding: 10px;
 }
-#colorSunday {
+#colorSunday{
   color: var(--sunday-color);
 }
 #calendar {
@@ -169,7 +169,7 @@ button:hover {
 #deleteButton {
   background-color: red;
 }
-#saveButton {
+#saveButton{
   background-color: #0d811d;
 }
 #closeButton {
@@ -199,11 +199,9 @@ button:hover {
 
 /* Footer */
 footer {
-  color: gray;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+    color: gray;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
 }
