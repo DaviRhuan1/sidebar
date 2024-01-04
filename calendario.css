@@ -1,19 +1,19 @@
 html {
-  --body-color: #ADD8E6;
+  --body-color: #add8e6;
 
-  --header-color: white;
+  --header-color: black;
 
   --sunday-color: red;
 
   --header-button: #0d811d;
 
-  --color-weekdays: #696969;
+  --color-weekdays: black;
 
   --box-shadow: #cbd4c2;
 
-  --hover: #58bae4;
+  --hover: #a9a9a9;
 
-  --current-day: #49a6e9;
+  --current-day: red;
 
   --event-color: #58bae4;
 
@@ -22,7 +22,7 @@ html {
   --color-day: white;
 }
 
-:root{
+:root {
   --ff-secondary: "Open Sans", sans-serif;
 }
 
@@ -32,7 +32,18 @@ body {
   justify-content: center;
   background-color: var(--body-color);
   font-family: var(--ff-secondary);
+  margin: 0; /* Remova as margens para garantir que a barra de rolagem funcione corretamente */
 }
+
+#content-wrapper {
+  overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
+}
+
+#container {
+  /* Adicione um width fixo ou use max-width conforme necessário para o seu design */
+  width: 100%;
+}
+
 button {
   background-color: #49a6e9;
   color: white;
@@ -73,8 +84,9 @@ button:hover {
 #weekdays div {
   width: 100px;
   padding: 10px;
+  text-align: center; /* Centralizar horizontalmente */
 }
-#colorSunday{
+#colorSunday {
   color: var(--sunday-color);
 }
 #calendar {
@@ -94,15 +106,19 @@ button:hover {
   box-shadow: 0px 0px 3px var(--box-shadow);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center; /* Centralizar horizontalmente */
   border-radius: 15%;
 }
 .day:hover {
   background-color: var(--hover);
+  
 }
 
 .day + #currentDay {
-  background-color: var(--current-day);
+  border-left: 5px solid var(--current-day);
+  border-right: 5px solid var(--current-day);
+  border-top: 5px solid var(--current-day);
+  border-bottom: 5px solid var(--current-day);
 }
 .event {
   font-size: 10px;
@@ -131,6 +147,7 @@ button:hover {
   left: calc(50% - 175px);
   position: absolute;
   font-family: sans-serif;
+  overflow-x: auto;
 }
 #eventTitleInput {
   padding: 10px;
@@ -168,8 +185,9 @@ button:hover {
 #cancelButton,
 #deleteButton {
   background-color: red;
+  float: right;
 }
-#saveButton{
+#saveButton {
   background-color: #0d811d;
 }
 #closeButton {
@@ -180,13 +198,14 @@ button:hover {
 }
 #modalBackDrop {
   display: none;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 10;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
+  width: 100vw; /* Alterado para 100% da largura da janela de visualização */
+  height: 100%; /* Alterado para 100% da altura da janela de visualização */
+  position: fixed; /* Alterado para 'fixed' para cobrir toda a tela mesmo durante a rolagem */
   background-color: rgba(0, 0, 0, 0.8);
+  
 }
 
 /* Dark mode */
@@ -194,14 +213,18 @@ button:hover {
   body {
     background-color: #010101;
     color: black;
+    --header-color: white;
   }
 }
 
 /* Footer */
 footer {
-    color: gray;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    text-align: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }

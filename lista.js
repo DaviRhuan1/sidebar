@@ -104,16 +104,22 @@ function deleteItem(e) {
   const element = e.currentTarget.parentElement.parentElement;
   const id = element.dataset.id;
 
-  list.removeChild(element);
+  // Exibe uma caixa de diálogo de confirmação
+  const isConfirmed = confirm("Tem certeza de que deseja excluir este item?");
 
-  if (list.children.length === 0) {
-    container.classList.remove("show-container");
+  // Se o usuário confirmou, exclua o item
+  if (isConfirmed) {
+    list.removeChild(element);
+
+    if (list.children.length === 0) {
+      container.classList.remove("show-container");
+    }
+    displayAlert("Item removido", "success");
+
+    setBackToDefault();
+    // remove from local storage
+    removeFromLocalStorage(id);
   }
-  displayAlert("Item removido", "success");
-
-  setBackToDefault();
-  // remove from local storage
-  removeFromLocalStorage(id);
 }
 // edit item
 function editItem(e) {

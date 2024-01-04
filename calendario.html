@@ -13,37 +13,53 @@
 
   <!-- -------- -->
   <body>
-    <div id="container">
-      <div id="header">
-        <button class="back" onclick="goBack()">Voltar</button>
-        <div id="monthDisplay"></div>
+    <div id="content-wrapper">
+      <div id="container">
+        <div id="header">
+          <button class="back" onclick="goBack()">Voltar</button>
+          <div id="monthDisplay"></div>
 
-        <div>
-          <button id="backButton">Anterior</button>
-          <button id="nextButton">Próximo</button>
+          <div>
+            <button id="backButton">Anterior</button>
+            <button id="nextButton">Próximo</button>
+          </div>
         </div>
-      </div>
 
-      <div id="weekdays">
-        <div id="colorSunday">Domingo</div>
-        <div>Segunda-feira</div>
-        <div>Terça-feira</div>
-        <div>Quarta-feira</div>
-        <div>Quinta-feira</div>
-        <div>Sexta-feira</div>
-        <div>Sábado</div>
-      </div>
+        <div id="weekdays">
+          <div id="colorSunday">Domingo</div>
+          <div>Segunda</div>
+          <div>Terça</div>
+          <div>Quarta</div>
+          <div>Quinta</div>
+          <div>Sexta</div>
+          <div>Sábado</div>
+        </div>
 
-      <!-- div dinamic -->
-      <div id="calendar"></div>
+        <!-- div dinamic -->
+        <div id="calendar"></div>
+      </div>
     </div>
 
     <div id="newEventModal">
       <h2>Novo Evento</h2>
 
       <input id="eventTitleInput" placeholder="Digite aqui o seu novo evento" />
-      <input type="date" id="date1" name="eventDateI" placeholder="Data de Início">
-      <input type="date" id="date2" name="eventDateF" placeholder="Data de Fim">
+
+      <label for="date1">Início:</label>
+      <input
+        type="date"
+        id="date1"
+        name="eventDateI"
+        placeholder="Início"
+      />
+
+      <label for="date2">Fim:</label>
+      <input
+        type="date"
+        id="date2"
+        name="eventDateF"
+        placeholder="Fim"
+      />
 
       <button id="saveButton">Salvar</button>
       <button id="cancelButton">Cancelar</button>

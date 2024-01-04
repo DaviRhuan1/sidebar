@@ -68,10 +68,16 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background-color: #ADD8E6;
+  background-color: #add8e6;
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 ul {
   list-style-type: none;
@@ -235,19 +241,19 @@ Grocery List
   color: var(--clr-grey-5);
 }
 .submit-btn {
-    background-color: #49a6e9;
-    color: white;
-    border: none;
-    padding: 8px 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    margin: 5px 5px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 8px;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  background-color: #49a6e9;
+  color: white;
+  border: none;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 5px 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
 }
 .submit-btn:hover {
   background: hsl(205, 89%, 70%);
@@ -327,23 +333,23 @@ Grocery List
 }
 
 button {
-    background-color: #49a6e9;
-    color: white;
-    border: none;
-    padding: 8px 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    margin: 2px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 8px;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  background-color: #49a6e9;
+  color: white;
+  border: none;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
 }
 
 button:hover {
-    background-color: hsl(205, 89%, 70%);
+  background-color: hsl(205, 89%, 70%);
 }
 
 /* Dark mode */
@@ -357,9 +363,12 @@ button:hover {
 /* Footer */
 
 footer {
-    color: gray;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    text-align: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }
