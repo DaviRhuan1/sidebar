@@ -181,6 +181,11 @@ main {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  padding-bottom: 50px;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin-bottom: 150px; /* Adapte conforme necessário */
 }
 /*
 =============== 
@@ -363,12 +368,10 @@ button:hover {
 /* Footer */
 
 footer {
-  bottom: 0;
-  position: fixed;
-  width: 100%;
+  position: relative;
   text-align: center;
   background-color: #333;
   color: #fff;
-  text-align: center;
   padding: 10px;
+  margin-top: 20px;
 }
