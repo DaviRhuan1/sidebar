@@ -59,15 +59,21 @@ Global Styles
 ===============
 */
 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 *,
 ::after,
 ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
+  position: relative;
   font-family: var(--ff-secondary);
   background-color: #add8e6;
   color: var(--clr-grey-1);
@@ -379,6 +385,7 @@ Sidebar
   box-shadow: var(--clr-red-dark);
   transition: var(--transition);
   transform: translate(-100%);
+  z-index: 1000;
 }
 .show-sidebar {
   transform: translate(0);
@@ -399,19 +406,56 @@ Sidebar
 
 /* Footer */
 
-footer {
-  color: gray;
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 5px; /* Adicione um padding para evitar que o conteúdo encoste nas bordas do rodapé */
+  font-size: 12px;
+  color: #fff;
+  background-color: #333;
+}
+
+.footer p {
+  margin: 0; /* Adicione isso para remover a margem padrão do parágrafo dentro do rodapé */
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* .credits {
+  position: absolute;
+  bottom: 0px; 
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 6px;
+  font-size: 12px;
   background-color: #333;
   color: #fff;
-  text-align: center;
-  padding: 10px;
+  z-index: 999;
 }
+
+.credits p {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.credits a:hover {
+  text-decoration: underline;
+} */
 
 /* Adiciona espaço no final da seção principal */
 .section:after {
   content: "";
   display: block;
-  height: 40px; /* Ajuste a altura conforme necessário para corresponder à altura do rodapé */
+  height: 20px; /* Ajuste a altura conforme necessário para corresponder à altura do rodapé */
 }
 
 /* Fale conosco */

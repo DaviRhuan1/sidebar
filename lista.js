@@ -104,11 +104,7 @@ function deleteItem(e) {
   const element = e.currentTarget.parentElement.parentElement;
   const id = element.dataset.id;
 
-  // Exibe uma caixa de diálogo de confirmação
-  const isConfirmed = confirm("Tem certeza de que deseja excluir este item?");
 
-  // Se o usuário confirmou, exclua o item
-  if (isConfirmed) {
     list.removeChild(element);
 
     if (list.children.length === 0) {
@@ -120,7 +116,7 @@ function deleteItem(e) {
     // remove from local storage
     removeFromLocalStorage(id);
   }
-}
+
 // edit item
 function editItem(e) {
   const element = e.currentTarget.parentElement.parentElement;
