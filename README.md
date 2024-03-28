@@ -14,7 +14,7 @@ Calendário integrado: Nunca perca um compromisso importante! Nosso calendário 
 <h1>Como usar o To Do?</h1>
 
 Na página <b>"Lista de Compras"</b>: </br>
-1 - Adicione itens à sua lista de compras após inserir o item no campo e clicar em <span style="color: blue;">adicionar</span>. </br>
+1 - Adicione itens à sua lista de compras após inserir o item no campo e clicar em <span style="color: #0000FF;">adicionar</span>. </br>
 2 - Você pode excluir item por item conforme desejar ou excluir todos os itens da lista de uma vez utilizando o botão <span style="color: red;">excluir itens</span> que aparece em vermelho. </br>
 
 Na página <b>"Calendário"</b>: </br>
