@@ -9,7 +9,7 @@ Abaixo, você encontrará tudo o que precisa saber para começar:
 
 <b>Organize suas compras:</b> Crie sua lista de compras, seja para o mercado, loja de ferragens ou qualquer outra necessidade.
 
-<b>Calendário integrado:</b> Nunca perca um compromisso importante! Nosso calendário permite que você acompanhe seus eventos e adicione novos eventos com facilidade.
+<b>Calendário integrado:</b> Nunca perca um compromisso importante! Nosso calendário permite que você acompanhe seus eventos, adicione novos ou exclua os antigos com facilidade.
 
 <h1>Como usar o To Do? 📋</h1>
 
