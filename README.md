@@ -13,15 +13,15 @@ Calendário integrado: Nunca perca um compromisso importante! Nosso calendário 
 
 <h1>Como usar o To Do?</h1>
 
-Na página <b>"Lista de Compras"</b>: 
-1 - Adicione itens à sua lista de compras após inserir o item e clicar em adicionar.
+Na página <b>"Lista de Compras"</b>: </br>
+1 - Adicione itens à sua lista de compras após inserir o item e clicar em adicionar. </br>
 2 - Você pode excluir item por item conforme desejar ou excluir todos os itens da lista de uma vez utilizando o botão excluir itens que aparece em vermelho.
 
-Na página <b>"Calendário"</b>: 
-1 - Verifique seus eventos programados.
-2 - Adicione novos eventos. 
-3 - Verifique a data de hoje.
-4 - Busque por uma data.
+Na página <b>"Calendário"</b>: </br>
+1 - Verifique seus eventos programados. </br>
+2 - Adicione novos eventos. </br>
+3 - Verifique a data de hoje. </br>
+4 - Busque por uma data. </br>
 5 - Exclua eventos clicando no dia do evento e logo após em cima do evento marcado. Aparecerá uma caixinha de alerta para verificar se você realmente deseja excluir o evento.
 
 O site possui o modo escuro vinculado ao perfil do usuário. Ele se configura automático conforme as configurações do navegador de quem estiver utilizando. 
