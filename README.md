@@ -5,13 +5,13 @@ O <b>To Do</b> é a solução perfeita para simplificar suas compras e organizar
 
 Abaixo, você encontrará tudo o que precisa saber para começar:
 
-<h1>Por que escolher o To Do?</h1>
+<h1>Por que escolher o To Do? 🤔</h1>
 
 <b>Organize suas compras:</b> Crie sua lista de compras, seja para o mercado, loja de ferragens ou qualquer outra necessidade.
 
 <b>Calendário integrado:</b> Nunca perca um compromisso importante! Nosso calendário permite que você acompanhe seus eventos e adicione novos eventos com facilidade.
 
-<h1>Como usar o To Do?</h1>
+<h1>Como usar o To Do? 📋</h1>
 
 Na página <b>"Lista de Compras"</b>: </br>
 1 - Adicione itens à sua lista de compras após inserir o item no campo e clicar em <b>adicionar</b>. </br>
@@ -26,5 +26,5 @@ Na página <b>"Calendário"</b>: </br>
 
 O site possui o <b>modo escuro</b> vinculado ao perfil do usuário. Ele se configura automático conforme as configurações do navegador de quem estiver utilizando. 
 
-Agradeço por escolher o <b>To Do</b> para simplificar sua vida. Espero que você aproveite e que este projeto consiga auxiliar suas atividades diárias. 
+Agradeço por escolher o <b>To Do</b> para simplificar sua vida. Espero que você aproveite e que este projeto consiga auxiliar suas atividades diárias. ❤️
 </p>
